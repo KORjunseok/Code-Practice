@@ -1,6 +1,26 @@
-// inch 단위를 cm 단위로 변경하기 
-const rawInput = prompt('inch 단위의 숫자를 입력하세요.')
-const inch = Number(rawInput);
-const cm = inch * 2.54 ;
 
-alert(`${inch}inch는 ${cm}cm입니다.`)
+
+// 3의 배수일 경우에는 '박수' 다른 배수일 경우 '통과'
+
+// function 삼육구게임(num){
+//   if (num % 3 == 0) {
+//     console.log("박수");
+//   } else {
+//     console.log('통과');
+//   }
+// }
+
+// 삼육구게임(16);
+
+function 삼육구게임(num){
+  if (num % 9 == 0) {
+    console.log("박수2");
+  } else if (num % 3 == 0) {
+    console.log('박수');
+  } else {
+    console.log('통과')
+  }
+}
+
+삼육구게임(28);
+
