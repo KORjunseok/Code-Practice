@@ -1,51 +1,23 @@
-// case 1. 삼육구게임 
-// function 삼육구게임(num){
-//   if (num % 3 == 0) {
-//     console.log("박수");
-//   } else {
-//     console.log('통과');
-//   }
-// }
-// 삼육구게임(16);
+// 1. 배열 내 점수들의 평균을 반환하라 
+const score = [50,50,60,70,30,20,40,59]
 
-// case 2. 삼육구게임 업글
-// function 삼육구게임(num){
-//   if (num % 9 == 0) {
-//     console.log("박수2");
-//   } else if (num % 3 == 0) {
-//     console.log('박수');
-//   } else {
-//     console.log('통과')
-//   }
-// }
-// 삼육구게임(28);
+// 2. 원의 둘레 구하기. 지름 곱하기 3.14래 
+// const 둘레 = 지름 => 지름 * 3.14
 
-// case 3. 공인중개사 시험점수 
-// function 합격했냐(개론, 민법) {
-//   if (개론+민법 >= 120 && 개론 >40 && 민법 >40) {
-//     console.log("합격입니다.")
-//   } else {
-//     console.log("불합격입니다.")
-//   }
-// };
-// 합격했냐(50, 50)
+// console.log(둘레(10))
 
-// // 이자율 계산하기 
-// var 예금액 = 60000;
-// var 미래예금액 = 0;
+// 3. 함수 만들어 보기 
+const 함수 = [2,4,6,7,8]
+let 함수찾기 = 함수.find(function(함수) {
+  return 함수 > 6
+})
 
-// if ( 예금액 >= 50000 ){
-//   미래예금액 = 예금액 * 1.2 * 1.2 ;
-// } else {
-//   미래예금액 = 예금액 * 1.15 * 1.15 ;
-// }
+console.log(함수찾기)
 
-// console.log(미래예금액) 
 
-// var first = 360;
-// var total = 0;
+// let foundNumber = numbers.find(function(number) {
+//   return number > 3;
+// });
 
-// total = first + first * 2 / 3 + first * 2 / 3 * 2 / 3
-
-// console.log(total)
+// console.log(foundNumber);   // 4
 
