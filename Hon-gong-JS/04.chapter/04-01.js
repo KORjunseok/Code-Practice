@@ -12,3 +12,5 @@ const fruitsB = ["사과", "배", "바나나"];
 fruitsB[fruitsB.length] = "귤";
 
 console.log(fruitsB);
+
+1;
