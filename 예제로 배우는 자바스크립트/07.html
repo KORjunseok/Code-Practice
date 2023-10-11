@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>    
+<body>
+<script>
+    let mile, km;
+    
+    document.write("------------------<br>");
+    document.write("마일 킬로미터<br>");
+    document.write("------------------<br>");
+    for (mile=1; mile<=100; mile+=2) {
+        km = mile * 1.609344;
+        km = km.toFixed(2);
+        document.write(mile + " " + km + "<br>");
+    }
+    document.write("------------------<br>");
+</script>
+</body>
+</html> 
