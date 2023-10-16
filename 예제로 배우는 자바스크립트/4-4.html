@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>    
+<body>
+<script>
+    function calRate(x) {   // 구매가에 대해 할인율 계산
+        let rate;    // 할인율
+        let discount;  // 할인 금액
+        if (x >= 10000 && x < 50000) {
+            rate = 5;
+        } else if (x >= 50000 && x < 300000) {
+            rate = 7.5;
+        } else if (x >= 300000) {
+            rate = 10;
+        }
+        else {
+            rate = 0;
+        }
+           
+        return rate;
+    }
+
+    let buy = 20000;        // 구매가 
+    let discount_rate;    // 할인율  
+    let discount;    // 할인 금액
+    let pay;    // 최종 지불 금액
+
+    discount_rate = calRate(buy);
+    discount = buy * (discount_rate/100);   
+    pay = buy - discount;
+
+    document.write("구매가: " + buy + "원<br>");
+    document.write("할인율: " + discount_rate + "%<br>");
+    document.write("할인 금액: " + discount + "원<br>");
+    document.write("- 지불 금액: " + pay + "원");
+</script>
+</body>
+</html> 

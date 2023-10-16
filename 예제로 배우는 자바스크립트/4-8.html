@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>    
+<body>
+<script>
+    function calAge(year, month, day) {
+        let age;
+        if (month < now_month) 
+            age = now_year - year;
+        else if (month == now_month) {
+            if (day <= now_day) 
+                age = now_year - year;
+            else
+                age = now_year - year - 1; 
+        }
+        else  
+            age = now_year - year - 1 
+
+        return age;
+    }
+
+    let now_year = 2023; // 현재 년
+    let now_month = 7;  // 현재 월
+    let now_day = 20;   // 현재 일
+
+    let birth_year = 2000; // 출생년
+    let birth_month = 8;    // 출생월
+    let birth_day = 10;     // 출생일
+
+    document.write("오늘 날짜: " + now_year + "년" + now_month + "월" + now_day + "일<br>");
+    document.write("출생 년월일: " + birth_year + "년" + birth_month + "월" + birth_day + "일<br>");
+    document.write("- 나이: " + calAge(birth_year, birth_month, birth_day));
+</script>
+</body>
+</html> 

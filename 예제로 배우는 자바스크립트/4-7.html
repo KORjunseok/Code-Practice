@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>    
+<body>
+<script>
+    function isFactor(x, y) {
+        let result = false;
+        if (x%y == 0)
+            result = true;
+
+        return result;
+    }
+
+    let num1 = 15;
+    let num2 = 20;
+    let hcf;
+
+    for(let i=1; i<=num1 && i<=num2; i++) {
+        if(isFactor(num1, i) && isFactor(num2, i))
+            hcf = i;
+    }
+    document.write(num1 + "와(과) " + num2 + "의 최대 공약수: " + hcf);   
+</script>
+</body>
+</html> 
