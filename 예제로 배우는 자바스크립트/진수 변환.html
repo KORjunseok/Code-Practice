@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id = "show"></p>
+  <script>
+    let x = 91
+    let result1 = x.toString(16);
+    let result2 = x.toString(10);
+    let result3 = x.toString(2);
+    
+    let text = ""
+    text += result1 + "<br>";
+    text += result2 + "<br>";
+    text += result3 + "<br>";
+    document.getElementById("show").innerHTML = text;
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+const book = {
+ title : "꿈과 사랑",
+ author : "정영진",
+ price : 15000,
+ showPrice : function() {
+  return this.title + "의 가격은 " + this.price + "원 입니다.";
+ }
+}
+
+function Book(title, author, price) {
+  this.title = title,
+  this.author = author,
+  this.price = price
+}
+
+const book1 = new Book("자바스크립트 기초", "김수정", 25000);
+text = "";
+for (x in book1) {
+  text += book1[x] + "<br>";
+}
+
+Book.prototype.year = "2023년 10월 22일"
+
+document.write("- 책 제목:" + book.title + "<br>");
+document.write("- 저자:",book.author+ "<br>");
+document.write(book.showPrice()+"<br>")
+document.write(text)
+document.write("출판일:"+ book1.year)
+
+</script>
+  
+</body>
+</html>
