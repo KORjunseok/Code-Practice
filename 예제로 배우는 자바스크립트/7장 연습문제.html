@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="show"></p>
+  <script>
+    let name = "홍길동";
+    let tel = "010-1234-5678";
+    let regist_day="20200713";
+
+    let year = regist_day.substr(0,4)
+    let month = regist_day.substr(4,2)
+    let day = regist_day.substr(6,4)
+
+    let text ="";
+    text += "이름 :" + name + "<br>";
+    text += "전화번호 :" + tel.replaceAll("-","")+ "<br>";
+    text += "생일 :" + year+"년"+month+"월"+day+"일" + "<br>";
+    document.getElementById("show").innerHTML = text;
+
+
+  </script>
+  
+</body>
+</html>
