@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id ="show"></p>
+  <script>
+    let x = 20.3648;
+    
+    let text = "";
+    text +=x.toFixed(0) + "<br>"
+    text +=x.toFixed(1) + "<br>"
+    text +=x.toFixed(2) + "<br>"
+    text +=x.toFixed(3) + "<br>"
+    document.getElementById("show").innerHTML = text;
+
+    let y = 123.348765;   
+
+    let text2 = "";
+    text2 += y.toPrecision() + "<br>";    
+    text2 += y.toPrecision(3) + "<br>";   
+    text2 += y.toPrecision(4) + "<br>";  
+    text2 += y.toPrecision(5) + "<br>";  
+    text2 += y.toPrecision(6);
+    document.getElementById("show").innerHTML = text2;
+  </script>
+</body>
+</html>
